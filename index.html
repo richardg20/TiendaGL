@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Tienda GL</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-md navbar-dark fixed-top bg-dark justify-content-between">
+    <nav class="container d-flex flex-column flex-md-row">
+      <a class="py-2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" aria-label="Product" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+          viewBox="0 0 24 24">
+          <title>( ͡° ͜ʖ ͡°)</title>
+          <circle cx="12" cy="12" r="10" />
+          <path
+            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        </svg>
+      </a>
+      <a class="py-2 d-none d-md-inline-block" href="index.html" style="color: white">Home</a>
+      <a class="py-2 d-none d-md-inline-block" href="prod.html" style="color: white">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="#" style="color: white">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="car.html" style="color: white">Carrito</a>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+      <a class="py-2 d-none d-md-inline-block" href="#" style="color: white">Contacto</a>
+
+      <a class="py-2 d-none d-md-inline-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" href="#"
+        style="color: white">Cuenta</a>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Inicio Sesión</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <form>
+            <img class="mb-4" src="image.png" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 fw-normal">Ingrese sus datos</h1>
+
+            <div class="form-floating">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Correo</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Contraseña</label>
+            </div>
+
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Recuérdame
+              </label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">Entrar</button>
+
+            <a
+              class="w-100 btn btn-lg btn-primary "
+              href="regi2.html"
+              role="button"
+              >Registrarse</a
+            >
+            
+            <p class="mt-5 mb-3 text-muted">&copy; 2017 – 2023</p>
+          </form>
+
+
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+
+
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#778" />
+          </svg>
+          <img style="object-fit:fill"
+            src="https://s3.amazonaws.com/businessinsider.mx/wp-content/uploads/2021/12/08164547/Comparacio%CC%81n-de-consolas.jpg"
+            class="d-block w-100" alt="...">
+          <div class="container">
+
+            <div class="carousel-caption">
+              <h1>Consolas</h1>
+              <p>Revisa nuestras consolas disponibles</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Ver</a></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#778" />
+          </svg>
+          <img src="https://todasgamers.com/wp-content/uploads/2020/07/BANNERthe-last-of-us-ii-tercer-videojuego-mas-vendido-ano-17-07-2020.jpeg" alt="" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>The Last of Us 2</h1>
+              <p>El nuevo juego de la franquicia ya disponible</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Ver</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#778" />
+          </svg>
+          <img style="object-fit: cover;"
+            src="https://www.amd.com/system/files/11368-gta-banner-1920x623.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>GTA V</h1>
+              <p>El ultimo y mejor gta</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Ver</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <h2 class="mb-5" style="text-align: center;"> Ultimas consolas </h2>
+        <div class="col-lg-4">
+
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#778" />
+            <image xlink:href="foto1.jpg" width="140" height="140" style="object-fit:fill;">
+          </svg>
+
+          <h2>Playstation 5</h2>
+          <p>Nueva consola de sony </p>
+          <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+
+
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#778" />
+            <image xlink:href="foto2.jpg" width="140" height="140" style="object-fit:fill;"> </image>
+          </svg>
+
+          <h2>Xbox series X</h2>
+          <p>Nueva consola de microsoft</p>
+          <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+            <image xlink:href="foto3.jpg" width="140" height="140" style="object-fit:fill;"></image>
+          </svg>
+
+          <h2>Nintendo Switch</h2>
+          <p>Nueva consola de nintendo</p>
+          <p><a class="btn btn-secondary" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      
+
+      <!-- /END THE FEAT..URETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <hr>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
