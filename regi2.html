@@ -92,13 +92,8 @@
             </div>
 
             <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">Entrar</button>
-            <a
-              class="w-100 btn btn-lg btn-primary"
-              href="regi2.html"
-              role="button"
-              >Registrarse</a
-            >
-            
+            <a class="w-100 btn btn-lg btn-primary" href="regi2.html" role="button">Registrarse</a>
+
             <p class="mt-5 mb-3 text-muted">&copy; 2017 – 2023</p>
           </form>
 
@@ -126,78 +121,45 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input
-                          type="text"
-                          id="form3Example1c"
-                          class="form-control"
-                        />
-                        <label class="form-label" for="form3Example1c"
-                          >Nombre</label
-                        >
+                        <input type="text" id="form3Example1c" class="form-control" />
+                        <label class="form-label" for="form3Example1c">Nombre</label>
                       </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input
-                          type="email"
-                          id="form3Example3c"
-                          class="form-control"
-                        />
-                        <label class="form-label" for="form3Example3c"
-                          >Email</label
-                        >
+                        <input type="text" id="Correo" class="form-control" />
+                        <label class="form-label" id= "Correolabel" for="form3Example3c">Email</label>
                       </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input
-                          type="password"
-                          id="form3Example4c"
-                          class="form-control"
-                        />
-                        <label class="form-label" for="form3Example4c"
-                          >Contraseña</label
-                        >
+                        <input type="password" id="form3Example4c" class="form-control" />
+                        <label class="form-label" for="form3Example4c">Contraseña</label>
                       </div>
                     </div>
 
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input
-                          type="password"
-                          id="form3Example4cd"
-                          class="form-control"
-                        />
-                        <label class="form-label" for="form3Example4cd"
-                          >Confirmar Contraseña</label
-                        >
+                        <input type="password" id="form3Example4cd" class="form-control" />
+                        <label class="form-label" for="form3Example4cd">Confirmar Contraseña</label>
                       </div>
                     </div>
 
-                    <div
-                      class="form-check d-flex justify-content-center mb-5"
-                    >
-                      <input
-                        class="form-check-input me-2"
-                        type="checkbox"
-                        value=""
-                        id="form2Example3c"
-                      />
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                       <label class="form-check-label" for="form2Example3">
                         He leido y acepto los
                         <a href="Terminos.html">Terminos y condiciones</a>
                       </label>
                     </div>
 
-                    <div
-                      class="d-flex justify-content-center mx-4 mb-3 mb-lg-4"
-                    >
-                      <button type="button" class="btn btn-primary btn-lg">
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="button" onclick= "return validar(Correo.value,Correolabel.value)" class="btn btn-primary btn-lg">
                         Registrarse
                       </button>
                     </div>
@@ -212,16 +174,17 @@
   </section>
 
 
-    <!-- FOOTER -->
- 
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2017–2023 Tienda GL &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
+  <!-- FOOTER -->
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2023 Tienda GL &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
   </main>
 
 
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js" ></script>
+  <script src="assets/dist/js/validacion.js" ></script>
 
 
 </body>
