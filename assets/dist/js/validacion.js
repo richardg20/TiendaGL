@@ -1,6 +1,6 @@
 function validarNombre(Nombre,Nombrelabel) {
     
-    if ( Nombre.length >=15 ) {
+    if ( Nombre.length >=15) {
         alert("Error: El nombre " + Nombre + "es demasiado largo.");
         document.getElementById("Nombrelabel").style.color = "black";
         document.getElementById("Nombrelabel").innerHTML="Nombre"
@@ -54,12 +54,15 @@ function validarContraseña(Contraseña1,Contraseña1label,Contraseña2,Contrase
     }
 
 }
-
-function checkbox(caja){
-    if (caja.checked()=false){
-        alert("Error: Terminos y condiciones no aceptados");
+/*function validarCheckbox(Check) {
+    if(Check){
+        document.getElementById("Checklabel").innerHTML = Check
+        alert("Debe aceptar los terminos y condiciones")
+    } else {
+        caja = true
     }
-}
+    
+  }*/
 
 
 /*function evento(){
