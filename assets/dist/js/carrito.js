@@ -54,6 +54,10 @@ function addToCart(event) {
     total -= parseFloat(price);
     var totalCarrito = document.getElementById('total-carrito');
     totalCarrito.textContent = 'Total: $' + total.toFixed(3);
+
+    if(total == 0){
+    totalCarrito.textContent = 'Carrito Vacío'}
+
   }
   
   // Obtener todos los enlaces "Añadir a carrito"
